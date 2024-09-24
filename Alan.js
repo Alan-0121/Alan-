@@ -1,34 +1,28 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: deep-purple; icon-glyph: calendar;
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: deep-purple; icon-glyph: calendar;
-/* ---------------- 歷史版本更新
- *
+/* @author  alan
+ * @version 1.0.0
+ * Scriptable使用的變數.
+ * 這些必須在檔案的頂部。 不要編輯.
+ * @version // icon-color: deep-purple; icon-glyph:  * ==========================
+ * ==========================
+ * 腳本校正更改紀錄
  *
  * 2024/09/
  * 2024/09/21   v 1.1   :  code完成
  * 2024/09/20   v 1.0   :  完成Alan-code 
-*/ 
-// 指定小部件專案的佈局 ----------------
+ */ 
+// ========================== © 2024 Alan
 const layout = `
   
-   row 
-    column
-      date
-      sunset
-      battery
-      space
-      events
-    
-    column(90)
-      space
-      space
-      space
+ -------------------
+ |date    |   90   |
+ |battery |current |
+ |sunrise |future  |
+ |        |        |
+ -------------------
+ |           events|
+ -------------------
        
 `
-//
 /* date 日期      reminders 提醒
  * battery 電池   sunrise 日出日落
  * events 事件    current條件
@@ -37,12 +31,12 @@ const layout = `
  * -------------------------------
  * openweathermap.org/appid
 */// 上方申請openweathermap-API金鑰.
-const apiKey = "2f3b5f38c3275a8830a4cbb3c7291f80"
+const apiKey = "金鑰"
 
-/* CODE.
- * 更仔細地編輯本節.
- * -------------------
-*/// Alan-code元素的名稱.
+/***
+ * @Project 公共参数配置模块
+ */
+/** Alan-code元素的名稱 **/
 const codeFilename = "Alan-code"
 const gitHubUrl = "https://github.com/Alan-0121/Alan/blob/main/Alan-code.js"
 
